@@ -1,0 +1,16 @@
+<nav class="my__nav ">
+    <button class="btn bar"> <i class="fas fa-bars" id="bars"></i>
+    </button>
+    <span class="ms-4 d-inline-block text-white "> {{ $title }}</span>
+    <a data-bs-toggle="collapse" href="#collapseProfile" role="button" aria-expanded="false"
+        aria-controls="collapseProfile">
+        <span class="float-end me-3 text-white span__profile"> {{ Auth::user()->name}}</span>
+        <img src="{{ asset('image')}}/user-profile.jpeg" class="image__profile mt-3" />
+    </a>
+    <div class="collapse" id="collapseProfile">
+        <dl class="collapse__ul-profile text-center">
+            <dt><a href="">Mi Perfil</a></dt>
+            <dt><a href="">Cerrar Sesión</a></dt>
+            </ul>
+    </div>
+</nav>
