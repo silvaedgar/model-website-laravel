@@ -1,4 +1,4 @@
-##WebSite Laravel.
+## WebSite Laravel.
 Contiene pagina de inicio, donde se da opciones para Registrase e Iniciar Sesion. Al iniciar sesión se despliega un SideBar con las alternativas. WebSite listo para modificarlo y adaptarlo a tus necesidades.
 
 ## Instalacion
