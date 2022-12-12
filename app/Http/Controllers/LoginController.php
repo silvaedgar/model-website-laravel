@@ -43,9 +43,14 @@ class LoginController extends Controller
         return redirect()->route('login')->with('status','Datos de email y/o password invalidos');
     }
 
+    public function logout(Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return view('home-guest');
+    }
+
     public function authHome() {
         return view('home-auth');
     }
-
-
 }

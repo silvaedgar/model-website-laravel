@@ -45,6 +45,12 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
     <script src="{{asset('js')}}/my-menu.js"></script>
+    <script>
+        function closeSession(object) {
+                if (confirm("Seguro que desea Cerrar la Sesion ? "))
+                    object.closest('form').submit()
+            }
+    </script>
     @stack('js')
 </body>
 

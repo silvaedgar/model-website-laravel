@@ -34,6 +34,7 @@ Route::get('about', function () {
 
 Route::get('login',[LoginController::class,'viewLogin'])->name('login');
 Route::post('login',[LoginController::class,'login'])->name('login');
+Route::post('logout',[LoginController::class,'logout'])->name('logout');
 
 Route::get('register',[LoginController::class,'viewRegister'])->name('register');
 Route::post('register',[LoginController::class,'register'])->name('register');

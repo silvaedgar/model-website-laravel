@@ -10,7 +10,12 @@
     <div class="collapse" id="collapseProfile">
         <dl class="collapse__ul-profile text-center">
             <dt><a href="">Mi Perfil</a></dt>
-            <dt><a href="">Cerrar Sesión</a></dt>
+            <form action="{{ route('logout')}}" method="POST">
+                @csrf
+                <a style="text-decoration: none; color:black; font-weight:bold " href="#" onclick="closeSession(this)">
+                    Cerrar
+                    Sesion </a>
+            </form>
             </ul>
     </div>
 </nav>
