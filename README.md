@@ -1,3 +1,16 @@
+## WebSite Laravel.
+Contiene pagina de inicio, donde se da opciones para Registrase e Iniciar Sesion. Al iniciar sesión se despliega un SideBar con las alternativas. WebSite listo para modificarlo y adaptarlo a tus necesidades.
+
+## Instalacion
+1. Clona desde la carpeta principal el proyecto git clone https://github.com/silvaedgar/model-website-laravel.git
+2. Ingresa a la carpeta creada "model-website-laravel
+3. npm install
+4. composer install
+5. Verificar configuración de archivo ".env"
+6. php artisan migrate
+7. php artisan key:generate
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
